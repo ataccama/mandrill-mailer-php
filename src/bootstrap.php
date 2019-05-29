@@ -1,3 +1,3 @@
 <?php
 
-    require __DIR__ . 'MandrillMailer.php';
+    require __DIR__ . '/MandrillMailer/MandrillMailer.php';
