@@ -1,7 +1,7 @@
 # Mandrill Mailer
 Easy-to-use PHP library for sending emails with Mandrill.
 
-[![Latest Stable Version](https://poser.pugx.org/ataccama/mandrill/v/stable)](https://packagist.org/packages/ataccama/mandrill) [![Total Downloads](https://poser.pugx.org/ataccama/keycloak-adapter/downloads)](https://packagist.org/packages/ataccama/keycloak-adapter) [![License](https://poser.pugx.org/ataccama/mandrill/license)](https://packagist.org/packages/ataccama/mandrill) [![Monthly Downloads](https://poser.pugx.org/ataccama/mandrill/d/monthly)](https://packagist.org/packages/ataccama/mandrill)
+[![Latest Stable Version](https://poser.pugx.org/ataccama/mandrill/v/stable)](https://packagist.org/packages/ataccama/mandrill) [![Total Downloads](https://poser.pugx.org/ataccama/mandrill/downloads)](https://packagist.org/packages/ataccama/mandrill) [![Latest Unstable Version](https://poser.pugx.org/ataccama/mandrill/v/unstable)](https://packagist.org/packages/ataccama/mandrill) [![License](https://poser.pugx.org/ataccama/mandrill/license)](https://packagist.org/packages/ataccama/mandrill) [![Monthly Downloads](https://poser.pugx.org/ataccama/mandrill/d/monthly)](https://packagist.org/packages/ataccama/mandrill) [![Daily Downloads](https://poser.pugx.org/ataccama/mandrill/d/daily)](https://packagist.org/packages/ataccama/mandrill) [![composer.lock](https://poser.pugx.org/ataccama/mandrill/composerlock)](https://packagist.org/packages/ataccama/mandrill)
 
 ## Installation
 `composer require ataccama/mandrill`
