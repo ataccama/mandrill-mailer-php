@@ -2,7 +2,7 @@
   "name": "ataccama/mandrill",
   "license": "MIT",
   "description": "Easy-to-use PHP library for sending emails with Mandrill.",
-  "version": "v1.2.0",
+  "version": "v1.2.1",
   "type": "library",
   "require": {
     "php": ">= 7.1.0",
