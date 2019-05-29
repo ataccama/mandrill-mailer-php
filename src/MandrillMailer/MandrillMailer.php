@@ -148,10 +148,8 @@
             $message = [
                 'subject'        => $this->templateParams['subject'],
                 'from_email'     => $this->templateParams['from']['email'],
-                'from_name'      => $this->templateParams['from']['name'],
                 'to'             => [
                     [
-                        'name'  => $this->templateParams['to']['name'],
                         'email' => $this->templateParams['to']['email'],
                         'type'  => 'to'
                     ]
@@ -162,6 +160,14 @@
                 'merge_language' => 'handlebars',
                 'subaccount'     => $this->subaccount
             ];
+
+            if(!empty($this->templateParams['from']['name'])) {
+                $message['from_name'] = $this->templateParams['from']['name'];
+            }
+
+            if(!empty($this->templateParams['to']['name'])){
+                $message['to'][]['name'] = $this->templateParams['to']['name'];
+            }
 
             if (!empty($this->templateVars)) {
                 foreach ($this->templateVars as $varKey => $varValue) {
