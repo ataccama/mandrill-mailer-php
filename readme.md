@@ -10,12 +10,12 @@ composer require ataccama/mandrill
 
 ## Usage
 
-```
+```php
 $mandrill = new Ataccama\MandrillMailer(API_KEY, SUB_ACCOUNT);
 ```
 
 ### Send Mandrill template
-```
+```php
 $mandrill
     ->addFrom('email@address.com', 'Name')
     ->addTo('email@address.com')
@@ -24,7 +24,7 @@ $mandrill
 ```
 
 #### Add variables to template
-```
+```php
 $mandrill->addAttributes([
    'variable_key_1' => 'variable 1 content',
    'variable_key_2' => 'variable 2 content'
@@ -32,7 +32,7 @@ $mandrill->addAttributes([
 ```
 
 ### Send basic html email
-```
+```php
 $mandrill
     ->addFrom('email@address.com')
     ->addTo('email@address.com', 'Name')
@@ -41,6 +41,6 @@ $mandrill
 ```
 
 ### Send
-```
-$this->mandrill->send()
+```php
+$mandrill->send();
 ```
