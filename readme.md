@@ -31,6 +31,11 @@ $mandrill->addAttributes([
 ]);
 ```
 
+### Add attachments
+```php
+addAttachment("filename.txt", "file content")
+```
+
 ### Send basic html email
 ```php
 $mandrill

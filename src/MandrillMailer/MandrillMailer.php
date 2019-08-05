@@ -140,6 +140,28 @@
         }
 
         /**
+         * @param      $name
+         * @param      $content
+         * @param null $type
+         * @return $this
+         */
+        public function addAttachment($name, $content, $type = null)
+        {
+            $attachment = [
+                "name"    => $name,
+                "content" => base64_encode($content)
+            ];
+
+            if (isset($type)) {
+                $attachment["type"] = $type;
+            }
+
+            $this->templateParams['attachments'][] = $attachment;
+
+            return $this;
+        }
+
+        /**
          * Get all variables to the message.
          * @return array
          */
@@ -180,6 +202,10 @@
 
             if (!empty($this->templateParams['htmlBody'])) {
                 $message['html'] = $this->templateParams['htmlBody'];
+            }
+
+            if (!empty($this->templateParams['attachments'])) {
+                $message['attachments'] = $this->templateParams['attachments'];
             }
 
             return $message;
